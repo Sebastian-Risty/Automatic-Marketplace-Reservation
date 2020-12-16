@@ -9,8 +9,8 @@ def launchBrowser():
     driver.get('https://xxx')
     usernameField = driver.find_element_by_id('id')
     passwordField = driver.find_element_by_id('password')
-    usernameField.send_keys('')
-    passwordField.send_keys()
+    usernameField.send_keys('') #ur username here
+    passwordField.send_keys('') #ur password here
     submitUserPass = driver.find_element_by_name('uip_action')
     submitUserPass.click()
     day = datetime.now().weekday()
